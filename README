@@ -1,0 +1,19 @@
+Video and audio file fetcher (with optional conversion)
+
+This is a simple wrapper around the quvi library. The quvi library is used to get the media (video or audio) file url associated with a web site url (like youtube).
+
+Dependencies:
+- libquvi
+- curl and ffmpeg installed (and in your $PATH)
+
+
+Usage examples:
+
+Download a video from youtube, saving it in it's original format (probably .webm of .flv):
+$ ./vidfetch "http://www.youtube.com/watch?v=q7uyKYeGPdE"
+
+Download a video from youtube and convert it to .avi:
+$ ./vidfetch -avi "http://www.youtube.com/watch?v=q7uyKYeGPdE"
+
+Extract the music from a youtube video, saving it as mp3:
+$ ./vidfetch -mp3 "http://www.youtube.com/watch?v=q7uyKYeGPdE"
