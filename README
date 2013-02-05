@@ -9,7 +9,7 @@ Dependencies:
 
 Usage examples:
 
-Download a video from youtube, saving it in it's original format (probably .webm of .flv):
+Download a video from youtube, saving it in it's original format (probably .webm or .flv):
 $ ./vidfetch "http://www.youtube.com/watch?v=q7uyKYeGPdE"
 
 Download a video from youtube and convert it to .avi:
