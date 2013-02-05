@@ -109,7 +109,7 @@ int main(int argc, char **argv)
     }
 
     std::string origFilename = info.Title + "." + info.Extension;
-    system(("curl \"" + info.Url + "\" -o \"" + origFilename + "\"").c_str());
+    system(("curl -C - \"" + info.Url + "\" -o \"" + origFilename + "\"").c_str());
 
     // If conversion needed (if a conversion format has been specified):
     if(format != "")
