@@ -116,7 +116,7 @@ int main(int argc, char **argv)
     {
         std::string finalFilename = info.Title + "." + format;
         
-        system(("ffmpeg -i \"" + origFilename + "\" -sameq \"" + finalFilename + "\"").c_str());
+        system(("ffmpeg -i \"" + origFilename + "\" -qscale 0 \"" + finalFilename + "\"").c_str());
 
         // Remove original
         system(("rm \"" + origFilename + "\"").c_str());
